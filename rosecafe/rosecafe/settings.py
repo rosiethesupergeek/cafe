@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
+    'crispy_bootstrap4',
 ]
 
 SITE_ID = 1
@@ -144,6 +145,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
+
+LOGIN_REDIRECT_URL = 'dashboard'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
