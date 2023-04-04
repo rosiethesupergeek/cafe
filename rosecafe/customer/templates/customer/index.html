@@ -1,16 +1,18 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-    <div class="container mb-5">
+    <div class="container mb-5" id="front-page">
         <div class="row justify-content-center mt-5">
-            <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
-                <h1>Online Food Delivery Service</h1>
+            <div class="col-md-8 col-sm-12  p-4 text-center">
+                
 
             </div>
         </div>
         <div class="row justify-content-center mt-1">
-            <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center" >
-                <h2>Place an Order!</h2>
+            <div class="card col-md-5 col-sm-12  p-4 text-center bg-card" >
+                <h1>Welcome to <i class="fa-solid fa-cupcake">Rosie's puds!</i></h1>
+                <br>
+                <h2>Place your order here</h2>
                 <a href="{% url 'order' %}" class="btn btn-outline-primary">Order Now!</a>
             </div>
         </div>

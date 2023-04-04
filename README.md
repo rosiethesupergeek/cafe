@@ -472,6 +472,7 @@ In the IDE:
 - W3Schools website
 - Django documentation
 - Stack overflow posts
+- Bootstrap documentation
 
 ## Content and Media
 

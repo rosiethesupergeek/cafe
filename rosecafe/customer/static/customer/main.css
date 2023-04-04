@@ -1,0 +1,23 @@
+
+
+body {
+    background: url('cafe_background.jpg') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: fixed; */
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-nav {
+    background-color: #9fd4c7;
+}
+
+.bg-foot {
+    background-color: #9fd4c7;
+}
+
+.bg-card {
+    background-color: #ffe6e6;
+}
