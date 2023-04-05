@@ -21,3 +21,15 @@ body {
 .bg-card {
     background-color: #ffe6e6;
 }
+
+.text-color {
+    color:#987272;
+}
+
+.background-div {
+    background-color:#987272;
+}
+
+.text-color-about {
+    color:#ffe6e6;
+}

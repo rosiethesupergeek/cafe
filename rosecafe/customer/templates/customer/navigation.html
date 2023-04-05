@@ -1,20 +1,20 @@
-<nav class="navbar navbar-expand-lg bg-nav">
-    <a class="navbar-brand ps-5 fs-3" href="{% url 'index' %}"><i class="fa-solid fa-cupcake"></i><i class="fa-solid fa-cupcake">Rosie's puds</i></a>
+<nav class="navbar navbar-expand-lg bg-nav fixed-top">
+    <a class="navbar-brand ps-5 fs-3" href="{% url 'index' %}"><i class="fa-solid fa-cupcake"></i><i class="fa-solid fa-cupcake text-color-about">Rosie's puds</i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto ps-5 fs-4">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}">About Us</span></a>
+          <a class="nav-link text-color" href="{% url 'about' %}">About Us</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+          <a class="nav-link text-color" href="{% url 'menu' %}">Menu</a>
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item fs-4 pe-5">
-            <a class="nav-link" href="{% url 'order' %}">Place An Order!</a>
+            <a class="nav-link text-color" href="{% url 'order' %}">Place An Order!</a>
           </li>
       </ul>
     </div>
