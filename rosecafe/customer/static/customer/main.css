@@ -33,3 +33,7 @@ body {
 .text-color-about {
     color:#ffe6e6;
 }
+
+#payment-margin {
+    margin-top: 12em;
+}
