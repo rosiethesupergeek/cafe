@@ -141,7 +141,7 @@ The tasks created for this project were put together following the tasks and ord
 
 **Creation of Project in GitPod**
 
-- Create the Django project. Check details in [deployment-section](#deployment)
+- Create the Django project.
 - Create the database models
 - Set up models.py file in "rosecafe/restaurant" directory
 - Set up Index and About pages: this includes creating base.html which contained the Navbar and Footer content, which I used in all template files. This created the consistency of the design of the project.
@@ -196,7 +196,7 @@ The wireframes for this projected were generated using Canva.
 
 ## Database Diagram
 
-Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post, Author, Destination and Comment are shown in this diagram.
+ERDplus was used to create a database schema to visualise the types of database models this project needed. In hindsight this project could use a "customer" model which would allow for customer login and more customer data to be stored.
 
 ![ER Diagram](assets/ERD/Database_Diagram.jpg)
 
@@ -212,7 +212,10 @@ Smart Draw was used to create a database schema to visualise the types of custom
 - The hero image is pleasing and appetising enticing the user to view further products.
 - The user can immediately navigate through to the other pages to see the menu of products, information about the company (about Us) and place an order.
 
-![Homepage](assets/features/home-page.jpg)
+![Homepage Desktop View](readme_pictures/homepage_desktop_rosecafe.png)
+![Homepage Tablet View](readme_pictures/tablet_view_cafe.png)
+![Homepage Mobile View](readme_pictures/mobile_view_cafe.png)
+
 
 ----
 
@@ -221,9 +224,9 @@ Smart Draw was used to create a database schema to visualise the types of custom
 - The nav bar is present on all pages and means the user doesn't need to press the back button lots.
 - The navbar is responsive and clear.
 
-![Navbar](assets/features/navbar.jpg)
+![Navbar Mobile](readme_pictures/navbar_mobile_cafe.png)
 
-![Navbar](assets/features/nav-hamburger.jpg)
+![Navbar Desktop](readme_pictures/desktop_nav.png)
 
 
 
@@ -232,7 +235,7 @@ Smart Draw was used to create a database schema to visualise the types of custom
 * The logged in super user and staff can see a dashboard with all orders, total revenue, the shipping status of each order, the paid status of each order, and the total number of orders.
 * Each order has an: ID, price, name, email, street, city, state, zip code, and a space for details.
 
-![logged-in-user-Navbar](assets/features/logged-in-user-navbar.jpg) 
+![logged-in dashboard](readme_pictures/dashboard_cafe.png) 
 
 ----
 
@@ -240,7 +243,7 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 - The website footer contains the copyright information for the company, the login button for staff/user and another deliver button.
 
-![Navbar](assets/features/footer.jpg)
+![Footer](readme_pictures/footer_cafe.png)
 
 ----
 
@@ -248,17 +251,14 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 - The About Page gives users information about Rosie's puds company and the current business. This adds a human touch to the site.
 
-![About Us](assets/features/about-us-page1.jpg)
-![About Us](assets/features/about-us2.jpg)
-
+![About Us](readme_pictures/about_cafe.png)
 ----
 
 ## Menu Page
 
 This page contains the menu of different puddings available to buy. These images are intended to entice and encourage the user to buy.
 
-![Blog Page](assets/features/blog-page1.jpg)
-![Blog Page](assets/features/blog-page2.jpg)
+![Menu Page](readme_pictures/menu_page.png)
 
 ----
 
@@ -267,7 +267,7 @@ This page contains the menu of different puddings available to buy. These images
 - This page contains a very obvious call to action button that encourages the customer to place an order.
 - When the customer clicks the button it takes them through to the website page.
 
-![Post-detail](assets/features/post-details1.jpg)
+![Deliver Page](readme_pictures/deliver_page.png)
 
 ----
 
@@ -275,10 +275,11 @@ This page contains the menu of different puddings available to buy. These images
 
 On the Menu page there is a search bar to allow users to find a favourite regular order, or see if there is a particular pudding they are hoping to find.
 
-![Search button](assets/features/search-button.jpg)
+![Search button](readme_pictures/search_pic.png)
 
 - On the search results page customers can see the corresponding puddings to their search query.
-![Search result](assets/features/search-result.jpg)
+![Search button](readme_pictures/search_query_pic.png)
+
 
 ----
 
@@ -288,7 +289,7 @@ On the Menu page there is a search bar to allow users to find a favourite regula
 
 - The superuser can access the backend of the site by inputting their username and password. The page appears like so:
 
-[here](assets/features/admin-panel-login.jpg).
+[here](readme_pictures/admin_page.png).
 
 - On the Admin Panel accessible to the superuser, I can carry out all CRUD functions so I can view, create, edit and delete menu items (puddings).
 - The superuser can also give other permissions to staff users and alter orders too.
