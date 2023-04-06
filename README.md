@@ -5,11 +5,6 @@
 > It targets **puddings, traditional and new** of a large variety in order to delight and create a positive emotional response in the website user. These puddings are a lovely treat presented in a visually pleasing and easy to navigate way. This satisfies the need of the user to find a sweet treat easily, and then makes the sales and delivery process of that sweet treat smooth and trouble free.
 The user can view the pictures of the puddings that they might like, order a pudding easily and organise payment and delivery of said pudding easily too.
 
-You can view the live site here:- [implement this]
-
-
-![mockup]([image of website homepage on tab mob and desk])
-
 ----
 
 ## [Content](#content)
@@ -21,28 +16,19 @@ You can view the live site here:- [implement this]
       - [Tasks](#tasks)
   - [Design](#design)
     - [Colours](#colours)
-    - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
   - [Database Diagram](#database-diagram)
   - [Features](#features)
     - [Home Page](#home-page)
       - [Navbar](#navbar)
-      - [Hero Image](#hero-image)
-      - [Destination Section](#destination-section)
+      - [User Page](#user-page)
       - [Footer](#footer)
-    - [User Page](#user-page)
     - [About Page](#about-page)
-    - [Blog Page](#blog-page)
-      - [Blog Details](#blog-details)
-      - [Blog Comments](#blog-comments)
-    - [Register](#register)
-    - [Login](#login)
-    - [Logout](#logout)
-    - [Destinations](#destinations)
-    - [Search Button](#search-button)
-    - [Alert Messages](#alert-messages)      
-  - [Admin Panel/Superuser](#admin-panelsuperuser)
+    - [Menu Page](#menu-page)
+      - [Deliver Page](#deliver-page)
+      - [Search Button](#blog-comments)
+    - [Super User Access](#super-user-access)  
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Django Packages](#django-packages)
@@ -52,16 +38,10 @@ You can view the live site here:- [implement this]
       - [Manual Testing](#manual-testing)
   - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
-      - [Unfix Bugs](#unfix-bugs)
-  - [Deployment](#deployment)
-      - [Creating the Django project](#creating-the-django-project)
-      - [Creating Heroku app](#creating-heroku-app)
-      - [Set up Environment Variables](#set-up-environment-variables)
-      - [Heroku deployment](#heroku-deployment)
-      - [Final Deployment](#final-deployment)
+      - [Future Implementation](#future-implementation)
   - [Credits](#credits)
-    - [Content](#content)
-    - [Information Sources / Resources](#information-sources--resources)
+    - [Code](#code)
+    - [Learning Resources](#learning-resources)
   - [Acknowledgement](#acknowledgement)
 
 -----
@@ -175,10 +155,6 @@ The colour scheme is inspired by other sweet treat websites. I chose pastel colo
 
 ![Color Palette](readme_pictures/colours.png)
 
-### Typography
-
-I trusted the typography created by the developers at Bootstrap and have used this throughout the website.
-
 ### Imagery
 
 All imagery is related to cakes and puddings as this is the produce the website is selling, aimed to entice the viewer to purchase through strong appealing imagery.
@@ -198,7 +174,7 @@ The wireframes for this projected were generated using Canva.
 
 ERDplus was used to create a database schema to visualise the types of database models this project needed. In hindsight this project could use a "customer" model which would allow for customer login and more customer data to be stored.
 
-![ER Diagram](assets/ERD/Database_Diagram.jpg)
+![ERD Diagram](readme_pictures/erd_diagram.png)
 
 [Back to top ⇧](#content)
 
@@ -214,7 +190,7 @@ ERDplus was used to create a database schema to visualise the types of database 
 
 ![Homepage Desktop View](readme_pictures/homepage_desktop_rosecafe.png)
 ![Homepage Tablet View](readme_pictures/tablet_view_cafe.png)
-![Homepage Mobile View](readme_pictures/mobile_view_cafe.png)
+![Homepage Mobile View](readme_pictures/mob_home.png)
 
 
 ----
@@ -262,6 +238,15 @@ This page contains the menu of different puddings available to buy. These images
 
 ----
 
+## Order Page
+
+This page contains the menu with the ability to select each menu item the customer wants to order.
+
+![Order Page](readme_pictures/m.png)
+
+
+----
+
 ## Deliver Page
 
 - This page contains a very obvious call to action button that encourages the customer to place an order.
@@ -299,14 +284,14 @@ On the Menu page there is a search bar to allow users to find a favourite regula
 - On selecting Menu Items in Customer, a list of Menu Items is displayed. When a menu item is selected, the superuser can see the: item name, description, image, price and category.
 - The superuser can select menu items, delete them, add them and edit their associated information.
 
-The admin site for pudding item model appears as shown [here](assets/features/admin-panel-post-model.jpg).
+The admin site for pudding item model appears as shown [here](readme_pictures/menu_item.png).
 
 ### Admin 'Order' Model Management
 
 - Upon selecting the order model under customer in the admin panel, the superuser can see a list of orders with the date and time the order was placed.
 - When the superuser clicks on an order, it displays the: price, menu items ordered, the name, email and address details of the person who sent the order. The order also has a paid check box and a shipped check box. These are either checked or unchecked depending on the status of the order.
 
-The admin site for order model appears as shown [here](assets/features/admin-panel-comment-model.jpg).
+The admin site for order model appears as shown [here](readme_pictures/order_page.png).
 
 
 ----
@@ -321,8 +306,6 @@ The admin site for order model appears as shown [here](assets/features/admin-pan
 
 ### Django Packages
 
-* Gunicorn.
-* Psycopg2.
 * Allauth - for registration, authentication and account management.
 * Crispy Forms - for form styling.
 
@@ -350,6 +333,31 @@ In order to test my site I used the following tools:
 
 ### Manual Testing
 Testing that the project performed as expected took place continuously throughout the build. Bugs were fixed before moving on.
+
+Please see below a walk through of the steps of ordering and paying for some puddings:
+
+- Select puddings:
+![Search button](readme_pictures/pud_select.png)
+
+- Fill out form:
+![Search button](readme_pictures/pud_form.png)
+
+- Click the submit button and confirm on the modal:
+![Search button](readme_pictures/pud_modal.png)
+
+- Submit payment details and click submit and you will see this screen :
+![Search button](readme_pictures/pud_paid.png)
+
+- To see the order, login to admin or staff:
+![Search button](readme_pictures/pud_dashboard.png)
+
+- Select the order details icon to see the details of the order:
+![Search button](readme_pictures/pud_order_details.png)
+
+
+- The search bar works as shown below:
+![Search button](readme_pictures/search_query_pic.png)
+
 ----
 
 ## Bugs
@@ -366,100 +374,6 @@ Testing that the project performed as expected took place continuously throughou
 * Add more models to the database so that the site can include drinks to accompany the puddings and an extras menu so that customers can add extra toppings or sauces of their choice.
 
 [Back to top ⇧](#content)
-
-
-## Deployment
-
-### 1. Creating the Django Project
-* Go to the Code Institute Gitpod Full Template [Template](https://github.com/Code-Institute-Org/gitpod-full-template).
-* Click on `Use This Template` button, then create new repository.
-* Name our repository and click on `Create repository from template` button.
-* Once the template is available in your repository click on `Gitpod` button.
-* When the image for the template and the Gitpod are ready, open a new terminal to start a new Django App.
-* Install Django and gunicorn: `pip3 install 'django<4' gunicorn`.
-* Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url==0.5.0 psycopg2`.
-* Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`.
-* Create file for requirements: `pip freeze --local > requirements.txt`.
-* Create project:`django-admin startproject project_name .`.
-* Create app: `python manage.py startapp app_name`.
-* Add app to list of `installed apps` in settings.py file: `'app_name'`.
-* Migrate changes: `python manage.py make migrations`.
-* Migrate changes 2: `python manage.py migrate`.
-* Test server works locally: `python manage.py runserver`.
-* If the app has been installed correctly the window will display- The install worked successfully! Congratulations! Accompanied by a picture of an enthusiastic rocket.
-
-### 3. Set up Environment Variables
-* In you IDE create a new env.py file in the top level directory.
-* Add env.py to the .gitignore file.
-* In env.py import the os library.
-* In env.py add `os.environ["DATABASE_URL"]` = "Paste the link copied from SQLite DATABASE_URL".
-* In env.py add `os.environ["SECRET_KEY"] = "Make up your own random secret key"`.
-* In Heroku Settings tab Config Vars enter the same `SECRET_KEY` created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
-
-### 4. Setting up settings.py
-* In your Django 'settings.py' file type:
-
- ```
- from pathlib import Path
- import os
-
- if os.path.isfile("env.py"):
-  import env
- ```
-* Comment out the `DATABASES` section in settings.py and replace with:
-```
-DATABASES = {
-  'default': 
-  dj_database_url.parse(os.environ.get("DATABASE_URL"))
-  }`
-```
-* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file by typing: `os.environ["CLOUDINARY_URL"] = "cloudinary://<insert-your-url>"`
-* In Heroku, click Reveal Config Vars and add a new record with the `CLOUDINARY_URL`
-* Add Cloudinary libraries to the installed apps section of settings.py file:
- ```
- 'cloudinary_storage'
- 'django.contrib.staticfiles''
- 'cloudinary'
- ```
-* Connect Cloudinary to the Django app in `settings.py`:
-```
-STATIC_URL = '/static'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE =
-'cloudinary_storage.storage.MediaCloudinaryStorage'
-* Link file to the templates directory in Heroku 
-* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
-'templates')
-```
-* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
-* Add Heroku Hostname to ALLOWED_HOSTS: 
-```ALLOWED_HOSTS = ['<Heroku_app_name>.herokuapp.com', 'localhost']```
-* Create Procfile at the top level of the file structure and insert the following:
-    ``` web: gunicorn PROJECT_NAME.wsgi ```
-
-* Commit and push the code to the GitHub Repository.
-
-### 5. Heroku Deployment: 
-* Click Deploy tab in Heroku.
-* Select Github as the deployment method.
-* Confirm you want to connect to GitHub.
-* Search for the repository name and click the connect button to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
-* Scroll to the bottom of the deploy page and select the preferred deployment type.
-* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
-
-### 6. Final Deployment
-In the IDE:
-* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
-* In Heroku settings config vars change the `DISABLE_COLLECTSTATIC` value to 0
-* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
-* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
-
-----
-
-[Back to top](#content)
 
 # Credits
 
